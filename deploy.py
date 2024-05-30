@@ -41,7 +41,7 @@ def pull_on_server():
 
 def reload_on_server():
     response = requests.post(
-        'https://www.pythonanywhere.com/api/v0/user/{username}/wabapps/{url}/reload'.format(
+        'https://www.pythonanywhere.com/api/v0/user/{username}/webapps/{url}/reload'.format(
             username=username,
             url=url
         ),
