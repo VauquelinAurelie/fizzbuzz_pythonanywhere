@@ -20,6 +20,8 @@ def main():
 # if __name__ == "__main__":
 #     main()
 
+print("coucou")
+
 
 @route('/')
 def index():
