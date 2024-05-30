@@ -35,7 +35,7 @@ def pull_on_server():
         ),
         headers={'Authorization': 'Token {token}'.format(token=token),
                  'Content-Type': 'application/json'},
-        json={"input: cd ~/mysite && git pull/n"}
+        json={'input': 'cd ~/mysite && git pull/n'}
     )
 
 
