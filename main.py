@@ -20,4 +20,10 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+@route('/index')
+def index():
+    return template('fizzbuzz')
+
+
 application = default_app()
