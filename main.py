@@ -1,3 +1,6 @@
+from bottle import default_app, route, template, request, error, post, debug
+
+
 def calculate_fizzbuzz(number):
     if number % 3 == 0 and number % 5 == 0:
         return "FizzBuzz"
@@ -17,3 +20,4 @@ def main():
 if __name__ == "__main__":
     main()
 
+application = default_app()
