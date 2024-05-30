@@ -1,4 +1,4 @@
-from bottle import default_app, route, template, request, error, post, debug
+from bottle import default_app, route, template, request, error, post, debug, run
 
 
 def calculate_fizzbuzz(number):
@@ -17,13 +17,15 @@ def main():
         print(calculate_fizzbuzz(number))
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
-@route('/index')
+@route('/')
 def index():
     return template('fizzbuzz')
 
 
 application = default_app()
+
+# run(host='localhost', port=8080)
