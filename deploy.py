@@ -29,7 +29,7 @@ def pushongit():
 
 def pull_on_server():
     response = requests.post(
-        'https://www.pythonanywhere.com/api/v0/user/{username}/consoles/{console_id}/send_input'.format(
+        'https://www.pythonanywhere.com/api/v0/user/{username}/consoles/{console_id}/send_input/'.format(
             username=username,
             console_id=console_id
         ),
