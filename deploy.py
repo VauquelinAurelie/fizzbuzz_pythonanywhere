@@ -22,8 +22,9 @@ result = subprocess.run(["pytest"], shell=True, capture_output=True, text=True)
 
 
 def pushongit():
-    subprocess.run(["git", "add", "."])
-    subprocess.run(["git", "commit", "-m", "test ok"])
+    message = input('Message du commit: ')
+    # subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "-am", f"{message}"])
     subprocess.run(["git", "push", "origin", "main"])
 
 
